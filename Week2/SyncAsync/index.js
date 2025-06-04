@@ -3,7 +3,6 @@
 //   return a+b;
 // }
 
-const { log } = require("console");
 
 // let ans = sum(2,4);
 // console.log(ans);
