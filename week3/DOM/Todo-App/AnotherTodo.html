@@ -18,7 +18,7 @@
       const newDivEl = document.createElement("div");
       newDivEl.setAttribute("id", ctr);
       // newDivEl.innerHTML = value;
-      console.log(newDivEl);
+    //   console.log(newDivEl);
       newDivEl.innerHTML =
       "<div>" +
         value +
@@ -26,7 +26,7 @@
         ctr +
         ")'>Delete Todo</button>";
         document.querySelector("body").appendChild(newDivEl);
-        console.log(newDivEl);
+        // console.log(newDivEl);
         ctr++;
     }
 
@@ -34,7 +34,7 @@
       console.log("DeleteTodo");
       const element = document.getElementById(index);
       const parentEl = element.parentNode;
-      console.log(parentEl);
+    //   console.log(parentEl);
       parentEl.removeChild(element);
     }
   </script>
