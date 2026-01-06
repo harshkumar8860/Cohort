@@ -57,7 +57,7 @@
 52. history ------------------------------to view all the command that i've used.
 53. bash filename
 54. grep "ERROR" filename ----------------will view all the error messages in that file.
-55. grep -v "INFO" filename
+55. grep -v "INFO" filename --------------will view everything else apart from error message.
 56. grep -A 5 ERROR filename -------------to view rows after the occurance of ERROR text in a file
 56. grep -B 5 ERROR filename -------------to view rows before the occurance of ERROR text in a file
 56. grep -C 5 ERROR filename -------------to view rows before and after the occurance of ERROR text in a file.
