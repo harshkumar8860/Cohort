@@ -1,1 +1,1 @@
-hello abcdef
+console.log("hello abcdef");

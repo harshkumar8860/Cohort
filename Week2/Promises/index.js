@@ -42,17 +42,20 @@ class Rectangle {
 }
 
 const rect = new Rectangle(2, 4, "red"); // instance/object of the rectangle class
-// const area = rect.area();
-// const paint = rect.paint();
-// console.log(area);
-// console.log(paint);
-// rect.paint()
+const area = rect.area();
+const paint = rect.paint();
+console.log(area);
+console.log(paint);
+rect.paint()
+
+console.log("------------");
 
 
 
 
 
 const now = new Date(); // new obj of date class
+// console.log(now.getMonth()+1);
 console.log(now.getUTCFullYear()); // called a fn on the object
 console.log(now.getTime());
 console.log(now.getDate());
@@ -79,3 +82,5 @@ var str = "Vishal";
 console.log(str);
 console.log(str.toLowerCase());
 console.log(str.toUpperCase());
+console.log(map);
+
