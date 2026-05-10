@@ -15,7 +15,7 @@ program.command('countwords')
             if (err) {
                 console.log(err);
             } else {
-                const lines = data.split(' ').length;
+                const lines = data.trim().split(/\s+/).length;
                 console.log(`There are ${lines} words in ${file}`);
             }
         })
