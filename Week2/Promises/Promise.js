@@ -47,11 +47,31 @@
 
 // setTimeout(3000, callback)  // callback based approach
 
+const fs = require('fs');
+
+function readymyFile(resolve){
+    console.log("reading my file");
+    fs.readFile("a.txt","utf-8", function (err,data){
+        console.log(data.trim());
+        resolve(data);
+    })
+  
+}
+
+function dothis(){
+    log("done reading file");
+}
+
+function IlldothispromisifiedWay(ms){
+    return new Promise(readymyFile);
+};
+
+IlldothispromisifiedWay().then(dothis);
 
 
 
 
-
+const { log } = require('console');
 // function random(resolve){ // resolve is also a function
 //     // resolve();
 //     setTimeout(resolve,3000);
@@ -75,11 +95,13 @@
 
 
 // PROMISIFIED FS.READ
-const fs = require('fs');
+// const fs = require('fs');
 
 // sync
 
 // const content1 = fs.readFileSync("a.txt","utf-8");
+// console.log(content1);
+
 // console.log(content1.trim());
 
 // Async
