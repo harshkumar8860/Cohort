@@ -6,7 +6,8 @@
 
 
 
-const chalk = require('chalk');
+// const chalk = require('chalk');
+import chalk from "chalk";
 // import {modifierNames, foregroundColorNames} from 'chalk';
 
 const log = console.log;
